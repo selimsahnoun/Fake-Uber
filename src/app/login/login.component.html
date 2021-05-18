@@ -1,0 +1,44 @@
+<div *ngIf="this.responseToTheUser" class="alert alert-success">
+  <strong>Success!</strong> Indicates a successful or positive action.
+</div>
+
+<div *ngIf="this.errorMessage" class="alert alert-danger">
+  <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+</div>
+<div class="row">
+  <div class="col-md-6 offset-md-3 mt-4">
+    <h3>Login</h3>
+    <form>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          required
+          [(ngModel)]="user.email"
+          class="form-control"
+          id="email"
+          placeholder="Enter Email"
+        />
+      </div>
+      <div class="form-group">
+        <label for="loginPassword">Password</label>
+        <input
+          type="password"
+          name="password"
+          required
+          [(ngModel)]="user.password"
+          class="form-control"
+          id="loginPassword"
+          placeholder="Password"
+        />
+      </div>
+      <div class="form-group form-check">
+        <a [routerLink]="['/reset-password']">Forgot Password</a>
+      </div>
+      <button (click)="login()" mdbBtn color="black">
+        Login <i class="fas fa-sign-in-alt"></i>
+      </button>
+    </form>
+  </div>
+</div>

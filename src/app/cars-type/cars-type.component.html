@@ -1,0 +1,140 @@
+<div class="card-deck">
+	<!-- Card 1 -------------------------------------------------------------------------------->
+	<mdb-card>
+		<div class="view overlay waves-light" mdbWavesEffect>
+			<!-- Card img -->
+			<mdb-card-img
+				src="../../assets/BasicCarPicture.jpg"
+				alt="Card image cap"
+			></mdb-card-img>
+			<a>
+				<div class="mask rgba-white-slight"></div>
+			</a>
+		</div>
+		<!--Card content-->
+		<mdb-card-body>
+			<!--Title-->
+			<mdb-card-title class="text-center">
+				<h4>Basic Car</h4>
+			</mdb-card-title>
+			<!--Text-->
+			<mdb-card-text class="text-center">
+				A comfortable car that will take you from point A to point B
+			</mdb-card-text>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<mdb-icon fab icon="algolia"> </mdb-icon>
+						{{ timeLengthInput.text.slice(0, -4) }}
+					</div>
+					<div class="col-sm">
+						<mdb-icon fas icon="car-alt"></mdb-icon> {{ distanceInput.text }}
+					</div>
+					<div class="col-sm">
+						<mdb-icon fas icon="money-check-alt"></mdb-icon>
+						{{ BaseCarPrice }} €
+					</div>
+				</div>
+				<br />
+			</div>
+			<div class="text-center">
+				<a mdbBtn color="black" (click)="summaryRequest()" mdbWavesEffect
+					>Basic</a
+				>
+			</div>
+		</mdb-card-body>
+	</mdb-card>
+
+	<!-- Card 2 -------------------------------------------------------------------------------->
+	<mdb-card>
+		<div class="view rgba-white-slight waves-light" mdbWavesEffect>
+			<!-- Card img -->
+			<mdb-card-img
+				src="../../assets/HighEndCarPicture.jpg"
+				alt="Card image cap"
+			></mdb-card-img>
+			<a>
+				<div class="mask"></div>
+			</a>
+		</div>
+		<!--Card content-->
+		<mdb-card-body>
+			<!--Title-->
+			<mdb-card-title class="text-center">
+				<h4>High End Car</h4>
+			</mdb-card-title>
+
+			<!--Text-->
+			<mdb-card-text class="text-center">
+				Mercedes, BMW and Audi, only selected cars from our catalog
+			</mdb-card-text>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<mdb-icon fab icon="algolia"> </mdb-icon>
+						{{ timeLengthInput.text.slice(0, -4) }}
+					</div>
+					<div class="col-sm">
+						<mdb-icon fas icon="car-alt"></mdb-icon> {{ distanceInput.text }}
+					</div>
+					<div class="col-sm">
+						<mdb-icon fas icon="money-check-alt"></mdb-icon>
+						{{ HighEndCarPrice }} €
+					</div>
+				</div>
+				<br />
+			</div>
+			<div class="text-center">
+				<a mdbBtn color="black" (click)="summaryRequest()" mdbWavesEffect
+					>High end</a
+				>
+			</div>
+		</mdb-card-body>
+	</mdb-card>
+
+	<!-- Card 3 -------------------------------------------------------------------------------->
+	<mdb-card>
+		<div class="view rgba-white-slight waves-light" mdbWavesEffect>
+			<!-- Card img -->
+			<mdb-card-img
+				src="../../assets/PremiumCarPicture.jpg"
+				alt="Card image cap"
+			></mdb-card-img>
+			<a>
+				<div class="mask"></div>
+			</a>
+		</div>
+		<!--Card content-->
+		<mdb-card-body>
+			<!--Title-->
+			<mdb-card-title class="text-center">
+				<h4>Premium Service</h4>
+			</mdb-card-title>
+			<!--Text-->
+			<mdb-card-text class="text-center">
+				Limo car with TV and snacks, with specially trained drivers.
+			</mdb-card-text>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<mdb-icon fab icon="algolia"></mdb-icon>
+						{{ timeLengthInput.text.slice(0, -4) }}
+					</div>
+					<div class="col-sm">
+						<mdb-icon fas icon="car-alt"></mdb-icon> {{ distanceInput.text }}
+					</div>
+					<div class="col-sm">
+						<mdb-icon fas icon="money-check-alt"></mdb-icon>
+						{{ PremiumCarPrice }} €
+					</div>
+				</div>
+				<br />
+			</div>
+			<div class="text-center">
+				<a mdbBtn color="black" (click)="summaryRequest()" mdbWavesEffect
+					>Premium</a
+				>
+			</div>
+		</mdb-card-body>
+	</mdb-card>
+</div>

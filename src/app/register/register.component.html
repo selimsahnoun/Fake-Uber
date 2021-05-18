@@ -1,0 +1,115 @@
+<div class="row">
+  <div class="col-md-6 offset-md-3 mt-4">
+    <h3>Register New Employer</h3>
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+      <div class="form-group">
+        <!-- first name -->
+        <label for="firstName">First Name</label>
+        <input
+          type="text"
+          name="firstName"
+          ngModel
+          required
+          #firstName="ngModel"
+          class="form-control"
+          placeholder="Enter username"
+        />
+      </div>
+
+      <!-- last name -->
+      <div class="form-group">
+        <label for="last name">last name</label>
+        <input
+          type="text"
+          name="lastName"
+          ngModel
+          required
+          #lastName="ngModel"
+          class="form-control"
+          placeholder="Enter username"
+        />
+      </div>
+      <div class="form-group">
+        <!-- email -->
+        <label for="registerEmail">Email</label>
+        <input
+          type="email"
+          name="email"
+          ngModel
+          required
+          #email="ngModel"
+          class="form-control"
+          id="registerEmail"
+          placeholder="Enter email"
+        />
+      </div>
+      <div class="form-group">
+        <!-- adress -->
+        <label for="registerUsername">address</label>
+        <input
+          type="text"
+          name="address"
+          ngModel
+          required
+          #address="ngModel"
+          class="form-control"
+          placeholder="Enter username"
+        />
+      </div>
+      <div class="form-group">
+        <!-- phone  -->
+        <label for="phone number">Phone number</label>
+        <input
+          type="text"
+          name="phoneNumber"
+          ngModel
+          required
+          #phoneNumber="ngModel"
+          class="form-control"
+          placeholder="Enter username"
+        />
+      </div>
+
+      <div class="form-group">
+        <!-- password -->
+        <label for="registerPassword">Password</label>
+        <input
+          type="password"
+          name="password"
+          ngModel
+          required
+          #password="ngModel"
+          class="form-control"
+          placeholder="Password"
+        />
+      </div>
+
+      <input
+        name="img"
+        type="file"
+        name="filename"
+        (change)="selectedFile($event)"
+        accept=".png,.jpg"
+        required
+      />
+      <div class="progress">
+        <div
+          class="progress-bar progress-bar-striped-bg-success"
+          role="progressbar"
+          [style.width]="(uploadProgress | async) + '%'"
+          [attr.aria-valuenow]="(uploadProgress | async) + '%'"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        ></div>
+      </div>
+      <a [href]="downloadURL | async" name="download">{{
+        downloadURL | async
+      }}</a>
+      <p></p>
+      <button type="submit" [disabled]="f.invalid" mdbBtn color="black">
+        Register <i class="fas fa-sign-in-alt"></i>
+      </button>
+    </form>
+    <img sref="C:\Users\kortqs\Pictures\Camera Roll" />
+  </div>
+</div>
