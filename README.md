@@ -1,7 +1,10 @@
-# Fake-Uber
+# Fake-Uber (FUBER)
+
 A mock Uber Front End App for educational purposes, called Fuber built with Angluar, Bootstrap and makes Google API calls to give the quickest route from Point A to Point B and a price according to the car type. 
 
 ### Important : This project is for educational purposes only and the source code shouldn't be use in production as it doesn't have good security, doesn't scale  and lacks many important features. 
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
 ### click on image to be directed to youtube for video demo
 
