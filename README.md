@@ -5,7 +5,7 @@ A mock Uber Front End App for educational purposes, called Fuber built with Angl
 
 ### click on image to be directed to youtube for video demo
 
-[<img src="https://img.youtube.com/vi/AJNHsBMKJDQ/maxresdefault.jpg" width="50%">](https://youtu.be/AJNHsBMKJDQ)
+[<img src="https://img.youtube.com/vi/2WBiUwKl7Vw/maxresdefault.jpg" width="50%">](https://youtu.be/2WBiUwKl7Vw)
 
 The github repository contains a basic implementation of a mock Uber Front End App (Fuber) using Angular. This app has the following features:
 
