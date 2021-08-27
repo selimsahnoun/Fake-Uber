@@ -8,7 +8,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ### click on image to be directed to youtube for video demo
 
-[<img src="https://img.youtube.com/vi/3WfImy655K8/maxresdefault.jpg" width="50%">](https://youtu.be/3WfImy655K8)
+[<img src="https://img.youtube.com/vi/2WBiUwKl7Vw/maxresdefault.jpg" width="50%">](https://youtu.be/2WBiUwKl7Vw)
 
 The github repository contains a basic implementation of a mock Uber Front End App (Fuber) using Angular. This app has the following features:
 
